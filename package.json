@@ -1,0 +1,56 @@
+{
+  "name": "date-timezones",
+  "version": "1.0.0",
+  "description": "Return native \"Date\" object with specific timezone (e.g. new DateTimezones('Australia/Sydney'))",
+  "main": "src/index.js",
+  "directories": {
+    "test": "test"
+  },
+  "dependencies": {
+    "moment-timezone": "^0.5.11"
+  },
+  "devDependencies": {
+    "chai": "3.5.0",
+    "codecov": "1.0.1",
+    "commitizen": "2.8.5",
+    "cz-conventional-changelog": "1.1.6",
+    "ghooks": "1.3.2",
+    "mocha": "3.0.1",
+    "npm-run-all": "2.3.0",
+    "nyc": "7.1.0",
+    "rimraf": "2.5.4",
+    "semantic-release": "^6.3.2"
+  },
+  "engines": {
+    "node": "6.x",
+    "npm": "3.x"
+  },
+  "scripts": {
+    "test": "mocha src/index.spec.js",
+    "commit": "git-cz",
+    "coverage": "nyc --reporter=lcov npm t",
+    "coverage.check": "nyc check-coverage --statements 100 --branches 100 --functions 100 --lines 100",
+    "coverage.report": "cat ./coverage/lcov.info | codecov",
+    "test": "mocha test/index.spec.js",
+    "test.watch": "npm t -- --watch",
+    "validate": "npm run coverage && npm run coverage.check",
+    "setup": "npm install && npm run validate",
+    "semantic-release": "semantic-release pre && npm publish && semantic-release post"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://jojoee@github.com/jojoee/date-timezones.git"
+  },
+  "keywords": [
+    "date",
+    "time",
+    "timezone",
+    "zone"
+  ],
+  "author": "Nathachai Thongniran <inid3a@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jojoee/date-timezones/issues"
+  },
+  "homepage": "https://github.com/jojoee/date-timezones#readme"
+}

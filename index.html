@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Date timezones</title>
+</head>
+<body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.17.1/moment.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.5.11/moment-timezone-with-data.min.js"></script>
+<script src="src/index.js"></script>
+<script>
+var timezones = [
+  '',
+  'Asia/Bangkok',
+  'Asia/Shanghai',
+  'Europe/London',
+];
+
+for (var i = 0; i < timezones.length; i++) {
+  var date = new DateTimezones(timezones[i]);
+  console.log(timezones[i], date);
+}
+</script>
+</body>
+</html>

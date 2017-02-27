@@ -1,0 +1,26 @@
+{
+  "name": "date-timezones",
+  "description": "Return native \"Date\" object with specific timezone (e.g. new DateTimezones('Australia/Sydney'))",
+  "main": "src/index.js",
+  "authors": [
+    "Nathachai Thongniran <inid3a@gmail.com>"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "date",
+    "time",
+    "timezone",
+    "zone"
+  ],
+  "homepage": "https://github.com/jojoee/date-timezones",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "moment-timezone": "^0.5.11"
+  }
+}

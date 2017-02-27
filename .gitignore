@@ -1,0 +1,7 @@
+# Dependency
+node_modules
+bower_components
+
+# Misc
+coverage
+.nyc_output
