@@ -5,3 +5,6 @@ bower_components
 # Misc
 coverage
 .nyc_output
+
+# Log
+npm-debug.log
