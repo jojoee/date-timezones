@@ -1,6 +1,6 @@
 {
   "name": "date-timezones",
-  "version": "1.0.0",
+  "version": "0.0.0-development",
   "description": "Return native \"Date\" object with specific timezone (e.g. new DateTimezones('Australia/Sydney'))",
   "main": "src/index.js",
   "directories": {
@@ -34,12 +34,11 @@
     }
   },
   "scripts": {
-    "test": "mocha src/index.spec.js",
+    "test": "mocha test/index.spec.js",
     "commit": "git-cz",
     "coverage": "nyc --reporter=lcov npm t",
     "coverage.check": "nyc check-coverage --statements 90 --branches 70 --functions 90 --lines 90",
     "coverage.report": "cat ./coverage/lcov.info | codecov",
-    "test": "mocha test/index.spec.js",
     "test.watch": "npm t -- --watch",
     "validate": "npm run coverage && npm run coverage.check",
     "setup": "npm install && npm run validate",
@@ -47,7 +46,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://jojoee@github.com/jojoee/date-timezones.git"
+    "url": "https://github.com/jojoee/date-timezones.git"
   },
   "keywords": [
     "date",

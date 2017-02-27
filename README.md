@@ -49,6 +49,15 @@ var london = DateTimezones('Europe/London');
 - [ ] Increase code coverage percentage
 - [ ] ESLint
 
+## Contribute for owner
+
+```
+$ npm install -g semantic-release-cli
+$ semantic-release-cli setup
+
+Using above command to setup "semantic-release"
+```
+
 ## Reference
 - [List of tz database time zones](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones)
 - [The World Clock](https://www.timeanddate.com/worldclock/)
