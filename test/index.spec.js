@@ -3,7 +3,7 @@ var DateTimezones = require('../src/index.js');
 
 describe('date-timezones', function() {  
   var currentDate,
-    currentDateTs,
+    currentDateSeconds,
     timezones;
 
   before(function() {
@@ -30,24 +30,24 @@ describe('date-timezones', function() {
 
   it('should be local', function() {
     var dateTimezones = new DateTimezones();
-    var dateTimezonesTs = dateTimezones.getTime();
+    dateTimezonesSeconds = Math.floor(dateTimezones.getTime() / 1000);
 
     currentDate = new Date();
-    currentDateTs = currentDate.getTime();    
+    currentDateSeconds = Math.floor(currentDate.getTime() / 1000);
 
-    expect(dateTimezonesTs).to.equal(currentDateTs);
+    expect(dateTimezonesSeconds).to.equal(currentDateSeconds);
   });
 
   it('should be timezoned', function() {
     // let currentDate equal bkk time
     currentDate = new DateTimezones('Asia/Bangkok');
-    currentDateTs = Math.floor(currentDate.getTime() / 1000);    
+    currentDateSeconds = Math.floor(currentDate.getTime() / 1000);
 
     for (var i = 0; i < timezones.length; i++) {
       var date = new DateTimezones(timezones[i].TZ);
-      var dateTs = Math.floor(date.getTime() / 1000); // ignore, less then second
+      var dateSeconds = Math.floor(date.getTime() / 1000);
 
-      expect(dateTs - currentDateTs).to.equal(timezones[i].diff)
+      expect(dateSeconds - currentDateSeconds).to.equal(timezones[i].diff)
     }
   });
 });
