@@ -5,8 +5,8 @@ var dtmMoment;
 
 if (dtmIsES6) {
   dtmMoment = require('moment-timezone');
-
 } else {
+  /* eslint-disable */
   dtmMoment = moment;
 }
 
@@ -25,20 +25,14 @@ var DtmDate = function(year, month, date, hours, mins, secs, mils) {
 
 /**
  * DateTimezones
- * 
+ *
  * @param {string} timezoneStr
  */
 var DateTimezones = function(timezoneStr) {
   if (typeof timezoneStr === 'undefined') timezoneStr = '';
   var current = new Date(),
     currentWithTimezone,
-    datem,
-    year,
-    month,
-    date,
-    hours,
-    mins,
-    secs;
+    datem;
 
   if (timezoneStr !== '') {
     var currentIso = new Date();
@@ -56,7 +50,6 @@ var DateTimezones = function(timezoneStr) {
       currentMomentWithTimezone.seconds(),
       current.getMilliseconds()
     );
-
   } else {
     datem = new DtmDate(
       current.getFullYear(),
