@@ -6,5 +6,9 @@ bower_components
 coverage
 .nyc_output
 
+# Lock
+yarn.lock
+package-lock.json
+
 # Log
 npm-debug.log
