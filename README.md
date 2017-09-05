@@ -47,7 +47,7 @@ var london = DateTimezones('Europe/London');
 - [ ] Screenshot
 - [x] Commit by `npm run commit` only
 - [ ] Increase code coverage percentage
-- [ ] ESLint
+- [x] ESLint
 
 ## Contribute for owner
 
