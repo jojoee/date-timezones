@@ -11,19 +11,24 @@ describe('date-timezones', function() {
     // - diff is a difference time if it compare with Bangkok
     timezones = [
       {
+        // UTC+7
         name: 'bangkok',
         TZ: 'Asia/Bangkok',
         diff: 0,
       },
       {
+        // UTC+8
+        // forward 1 hr
         name: 'shanghai',
         TZ: 'Asia/Shanghai',
-        diff: 3600, // +1hr
+        diff: 3600,
       },
       {
+        // UTC+1
+        // behind 6 hrs
         name: 'london',
         TZ: 'Europe/London',
-        diff: -25200, // -7hrs
+        diff: -21600,
       }
     ];
   });
