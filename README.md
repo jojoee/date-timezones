@@ -45,6 +45,7 @@ var london = DateTimezones('Europe/London');
 - [x] Commit by `npm run commit` only
 - [ ] Increase code coverage percentage
 - [x] ESLint
+- [ ] Automated scripts: auto update dependencies, cause it need to update DSL (Daylight Saving Time)
 
 ## Contribute for owner
 
