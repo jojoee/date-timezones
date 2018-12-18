@@ -5,7 +5,7 @@
 [![Version - npm](https://img.shields.io/npm/v/date-timezones.svg)](https://www.npmjs.com/package/date-timezones)
 [![Version - Bower](https://img.shields.io/bower/v/date-timezones.svg)](https://bower.io/search/?q=date-timezones)
 [![License - npm](https://img.shields.io/npm/l/date-timezones.svg)](http://opensource.org/licenses/MIT)
-[![semantic-release](https://img.shields.io/badge/%20%20%F0%9F%93%A6%F0%9F%9A%80-semantic--release-e10079.svg?style=flat-square)](https://github.com/semantic-release/semantic-release)
+[![semantic-release](https://img.shields.io/badge/%20%20%F0%9F%93%A6%F0%9F%9A%80-semantic--release-e10079.svg?style=flat-square)](https://github.com/semantic-release/semantic-release) [![Greenkeeper badge](https://badges.greenkeeper.io/jojoee/date-timezones.svg)](https://greenkeeper.io/)
 
 Return native "Date" object with specific timezone (e.g. new DateTimezones('Australia/Sydney'))
 
